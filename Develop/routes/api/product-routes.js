@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     res.status(200).json(allProducts); 
     } 
     catch {
-      es.status(500).json(err);
+      res.status(500).json(err);
     } 
 });
 
